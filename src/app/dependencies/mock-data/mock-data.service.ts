@@ -184,8 +184,8 @@ export class MockDataService {
         const ranColor = `#${Math.random().toString(16).substr(-6)}`;
 
         field.cultivations[index].phases.push({
-          id: index2 + 1,
-          name: `Activity ${index2 + 1}`,
+          id: (index2 + 1) + (index * 10),
+          name: `Activity ${(index2 + 1) + (index * 10)}`,
           color: ranColor,
           startDate: mockStart,
           completionDate: mockEnd,
