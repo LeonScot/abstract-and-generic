@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MockDataComponent } from './dependencies/mock-data/mock-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MockDataComponent
   ],
   imports: [
     BrowserModule,
